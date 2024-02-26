@@ -1,13 +1,26 @@
-import { IChildren, IMainContext } from "@/types/types";
-import { useRouter } from "next/navigation";
-import { createContext, useContext } from "react";
+"use client";
 
-const MainContext = createContext<IMainContext>({} as IMainContext);
+import { IChildren, IMainContext } from "@/types/types";
+// import { useRouter } from "next/navigation";
+import { createContext, useContext, useState } from "react";
+
+export const MainContext = createContext<IMainContext>({} as IMainContext);
 
 export const MainProvider = ({ children }: IChildren) => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  return <MainContext.Provider value={{}}>{children}</MainContext.Provider>;
+  const [language, setLanguage] = useState<string | undefined>(undefined);
+
+  return (
+    <MainContext.Provider
+      value={{
+        language,
+        setLanguage,
+      }}
+    >
+      {children}
+    </MainContext.Provider>
+  );
 };
 
 //hook
