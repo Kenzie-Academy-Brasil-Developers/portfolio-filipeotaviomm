@@ -7,4 +7,6 @@ export interface IChildren {
 export interface IMainContext {
   language: string | undefined;
   setLanguage: Dispatch<SetStateAction<string | undefined>>;
+  isMenuOpen: boolean;
+  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
 }

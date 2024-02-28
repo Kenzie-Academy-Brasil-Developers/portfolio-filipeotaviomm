@@ -1,24 +1,36 @@
 "use client";
 import Header from "@/components/header/header";
+import SectionHome from "@/components/sections/sectionHome";
 import { Locale } from "@/config/it8n.config";
 import { useMainContext } from "@/providers/mainContext";
-import Link from "next/link";
 import { useEffect } from "react";
+// import { Inter } from "@next/font/google";
+
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+// });
 
 export default function Home({ params }: { params: { lang: Locale } }) {
-  const { setLanguage, language } = useMainContext();
+  const { setLanguage, isMenuOpen, setIsMenuOpen } = useMainContext();
   useEffect(() => setLanguage(params.lang), []);
 
-  return (
-    <main className="body min-h-screen">
-      <Header />
+  useEffect(() => {
+    console.log(isMenuOpen);
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
 
-      <Link href="/pt-BR">
-        <button>Português</button>
-      </Link>
-      <Link href="/en-US">
-        <button>Inglês</button>
-      </Link>
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <main className="body min-h-screen flex flex-col font-inter inter.variable">
+      <Header />
+      <SectionHome />
     </main>
   );
 }

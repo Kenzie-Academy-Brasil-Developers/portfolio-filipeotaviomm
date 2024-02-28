@@ -31,12 +31,17 @@ select {
   border: none;
 }
 
+h1 {
+  font-size: unset;
+  font-weight: 400;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .body {
-    @apply bg-black text-white;
+    @apply text-white-primary;
   }
 }

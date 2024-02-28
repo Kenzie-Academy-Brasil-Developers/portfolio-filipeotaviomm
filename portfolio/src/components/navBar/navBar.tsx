@@ -10,8 +10,8 @@ const NavBar = () => {
 
   const dict = getDictionaryUseClient(language as Locale);
   return (
-    <nav>
-      <ul>
+    <nav className="text-sm pl-[10px] mt-[25px] mb-[15px]">
+      <ul className="flex flex-col gap-[10px]">
         <li>
           <a href="">{dict.navBar.home}</a>
         </li>
