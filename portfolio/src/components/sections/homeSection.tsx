@@ -4,16 +4,18 @@ import { useMainContext } from "@/providers/mainContext";
 import { stackData } from "@/utils/data";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import { ReactTyped } from "react-typed";
 
-const SectionHome = () => {
+const HomeSection = () => {
   const { language } = useMainContext();
   const blueWords = ["love", "developing", "adoro", "desenvolver"];
 
   const dict = getDictionaryUseClient(language as Locale);
+
   return (
     <section className="w-full px-[20px] pt-[165px]  pb-[100px] bg-gray-secondary border-b-[3px] border-white-primary lg:flex lg:flex-row lg:pl-[80px]">
       <div className="flex flex-col gap-[30px] lg:w-[55%]">
-        <div className="flex flex-row items-center gap-3">
+        <div className="flex flex-row items-center gap-3 md:mt-[40px]">
           <Image
             className=""
             width={30}
@@ -23,6 +25,30 @@ const SectionHome = () => {
           />
           <h2 className="text-sm">{dict.home.presentation}</h2>
         </div>
+        {language === "en-us" ? (
+          <div>
+            <span className="text-md text-white-primary">I am a </span>
+            <ReactTyped
+              className="text-md text-purple-primary font-semibold"
+              strings={[dict.home.front, dict.home.back, dict.home.full]}
+              typeSpeed={150}
+              backSpeed={100}
+              loop
+            />
+          </div>
+        ) : (
+          <div>
+            <span className="text-md text-white-primary">Eu sou um </span>
+            <ReactTyped
+              className="text-md text-purple-primary"
+              strings={[dict.home.front, dict.home.back, dict.home.full]}
+              typeSpeed={150}
+              backSpeed={100}
+              loop
+            />
+          </div>
+        )}
+
         <div className="text-xl font-bold">
           {dict.home.slogan
             .split(" ")
@@ -56,7 +82,7 @@ const SectionHome = () => {
             </a>
           </div>
         </div>
-        <ul className="h-[130px] flex flex-row mt-[35px] gap-[90px] overflow-x-auto overflow-y-hidden xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
+        <ul className="h-[130px] flex flex-row mt-[35px] gap-[90px] overflow-x-auto overflow-y-hidden md:mt-[90px] xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
           {stackData.map((stack, index) => (
             <li key={index}>
               <stack.img
@@ -81,4 +107,4 @@ const SectionHome = () => {
   );
 };
 
-export default SectionHome;
+export default HomeSection;
