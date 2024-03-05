@@ -23,6 +23,7 @@ const config: Config = {
         58: "55",
       },
       fontSize: {
+        xs: "16px",
         sm: "18px",
         md: "24px",
         lg: "28px",
@@ -33,7 +34,7 @@ const config: Config = {
           primary: "#0A0A0B",
           secondary: "#121214",
           tertiary: "#868E96",
-          900: "#141414",
+          quarternary: "#d3d3d3",
         },
         white: {
           primary: "#FFFFFF",

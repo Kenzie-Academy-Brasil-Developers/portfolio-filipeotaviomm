@@ -13,7 +13,10 @@ const HomeSection = () => {
   const dict = getDictionaryUseClient(language as Locale);
 
   return (
-    <section className="w-full px-[20px] pt-[165px]  pb-[100px] bg-gray-secondary border-b-[3px] border-white-primary lg:flex lg:flex-row lg:pl-[80px]">
+    <section
+      id="home"
+      className="w-full px-[20px] pt-[115px] bg-gray-secondary md:pb-[90px] md:pr-[0px] lg:flex lg:flex-row lg:pl-[80px]"
+    >
       <div className="flex flex-col gap-[30px] lg:w-[55%]">
         <div className="flex flex-row items-center gap-3 md:mt-[40px]">
           <Image
@@ -25,7 +28,7 @@ const HomeSection = () => {
           />
           <h2 className="text-sm">{dict.home.presentation}</h2>
         </div>
-        {language === "en-us" ? (
+        {language !== "pt-BR" ? (
           <div>
             <span className="text-md text-white-primary">I am a </span>
             <ReactTyped
@@ -40,7 +43,7 @@ const HomeSection = () => {
           <div>
             <span className="text-md text-white-primary">Eu sou um </span>
             <ReactTyped
-              className="text-md text-purple-primary"
+              className="text-md text-purple-primary font-semibold"
               strings={[dict.home.front, dict.home.back, dict.home.full]}
               typeSpeed={150}
               backSpeed={100}
@@ -50,15 +53,15 @@ const HomeSection = () => {
         )}
 
         <div className="text-xl font-bold">
-          {dict.home.slogan
-            .split(" ")
-            .map((word) =>
-              blueWords.includes(word) ? (
-                <span className="text-purple-primary">{word + " "}</span>
-              ) : (
-                <span>{word + " "}</span>
-              )
-            )}
+          {dict.home.slogan.split(" ").map((word, index) =>
+            blueWords.includes(word) ? (
+              <span key={index} className="text-purple-primary">
+                {word + " "}
+              </span>
+            ) : (
+              <span key={index}>{word + " "}</span>
+            )
+          )}
         </div>
         <p className="text-gray-tertiary text-sm">{dict.home.present}</p>
         <div className="w-full flex flex-col gap-[20px] lg:flex-row lg:items-center lg:gap-[33px]">
@@ -86,8 +89,9 @@ const HomeSection = () => {
           {stackData.map((stack, index) => (
             <li key={index}>
               <stack.img
-                title={stack.title}
-                className="text-gray-tertiary"
+                // title={stack.title}
+                data-title={stack.title}
+                className="icon text-gray-tertiary"
                 size={80}
               />
             </li>
@@ -95,13 +99,7 @@ const HomeSection = () => {
         </ul>
       </div>
       <div className="hidden lg:flex lg:justify-end lg:w-[45%] lg:mt-[-920px]">
-        <Image
-          className=""
-          width={550}
-          height={9000}
-          src="/image-bg.svg"
-          alt="image-bg"
-        />
+        <img src="/image-bg.svg" alt="image-bg" className="w-[550px] fixed" />
       </div>
     </section>
   );

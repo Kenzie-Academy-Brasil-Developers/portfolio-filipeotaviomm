@@ -24,4 +24,7 @@ export const ptBR = {
     parag_2:
       "Nos últimos anos tenho estudado sobre tecnologia, esse interesse veio com o desenvolvimento do meu artigo final na pós-graduação, onde abordei as possibilidades do uso de tecnologia na sala de aula. A partir daí fui buscando mais conhecimento na área, até decidir fazer a transição de carreira e buscar um direcionamento mais robusto em programação. Nessa trajetória já desenvolvi vários projetos, assim me tornando um desenvolvedor fullstack. Logo abaixo você pode conferir alguns desses projetos.",
   },
+  projects: {
+    title: "Meus Projetos",
+  },
 };

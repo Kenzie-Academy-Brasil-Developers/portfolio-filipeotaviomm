@@ -1,4 +1,5 @@
 import { SiPostgresql, SiTypescript, SiDjango } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { FaGit, FaPython } from "react-icons/fa";
 import {
   FaDocker,
@@ -51,7 +52,32 @@ export const stackData = [
     img: FaDocker,
   },
   {
-    title: "Gi",
+    title: "Git",
     img: FaGit,
+  },
+  {
+    title: "Next",
+    img: TbBrandNextjs,
+  },
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    name: "Kenzie Burguer",
+    photo: "/kenzie-burguer.jpg",
+    stack: "Front End",
+    techs: ["HTML, JavaScript, SCSS"],
+    gitHub: "https://github.com/filipeotaviomm/Burguer-Kenzie",
+    vercel: "https://hamburgueria-kenzie-filipeotaviomm.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Nu Kenzie",
+    photo: "/nu-kenzie.jpg",
+    stack: "Front End",
+    techs: ["HTML, JavaScript, SCSS"],
+    gitHub: "https://github.com/filipeotaviomm/Nu-Kenzie",
+    vercel: "https://template-nu-kenzie-filipeotaviomm.vercel.app/",
   },
 ];

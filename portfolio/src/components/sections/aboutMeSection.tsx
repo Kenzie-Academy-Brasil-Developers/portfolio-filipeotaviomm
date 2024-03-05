@@ -7,8 +7,11 @@ const AboutMeSection = () => {
 
   const dict = getDictionaryUseClient(language as Locale);
   return (
-    <section className="bg-gray-secondary w-full px-[20px] py-[80px] lg:px-[80px]">
-      <div className="flex flex-col md:flex-row">
+    <section
+      id="aboutMe"
+      className="bg-gray-secondary w-full px-[20px] py-[80px] lg:px-[80px] lg:border-t-[3px] lg:border-white-primary z-10"
+    >
+      <div className="flex flex-col md:flex-row pt-[45px]">
         <div className="flex justify-center items-center">
           <img
             className="rounded-[10px] max-w-[300px] max-h-[300px] md:pt-[7px]"

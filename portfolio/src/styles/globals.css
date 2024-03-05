@@ -36,6 +36,10 @@ h1 {
   font-weight: 400;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,3 +49,35 @@ h1 {
     @apply text-white-primary;
   }
 }
+
+.icon {
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: #fff;
+  filter: drop-shadow(6px 0px 3px #ffffff4d);
+  transform: scale(1.2);
+}
+
+.icon:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+

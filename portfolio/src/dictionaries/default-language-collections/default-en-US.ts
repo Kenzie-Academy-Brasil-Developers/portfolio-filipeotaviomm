@@ -24,4 +24,7 @@ export const enUS = {
     parag_2:
       "In recent years I have been studying technology, this interest came with the development of my final postgraduate article, where I addressed the possibilities of using technology in the classroom. From then on I began seeking more knowledge in the area, until I decided to make a career transition and seek a more robust direction in programming. Along this path, I have already developed several projects, thus becoming a fullstack developer. Below you can check out some of these projects.",
   },
+  projects: {
+    title: "My Projects",
+  },
 };
