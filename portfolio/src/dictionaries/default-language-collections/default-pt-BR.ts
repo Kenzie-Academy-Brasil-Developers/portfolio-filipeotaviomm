@@ -27,4 +27,25 @@ export const ptBR = {
   projects: {
     title: "Meus Projetos",
   },
+  contacts: {
+    phrase:
+      "Vamos marcar uma conversa e desenvolver nossa criatividade juntos!",
+    zap: {
+      title: "Meu Whatsapp",
+      phrase:
+        "Estou disponível para um chat de voz, não hesite em contactar-me.",
+      link: "Vamos conversar",
+    },
+    email: {
+      title: "Meu Email",
+      phrase: "Me envie um e-mail com feedbacks, sugestões e ideias",
+      link: "Me envie um e-mail",
+    },
+    linkedIn: {
+      title: "Meu LinkedIn",
+      phrase:
+        "Podemos criar interações mais constantes e também uma rede de compartilhamento",
+      link: "Me encontre no LinkedIn",
+    },
+  },
 };

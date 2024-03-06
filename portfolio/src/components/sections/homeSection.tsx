@@ -15,7 +15,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="w-full px-[20px] pt-[115px] bg-gray-secondary md:pb-[90px] md:pr-[0px] lg:flex lg:flex-row lg:pl-[80px]"
+      className="w-full px-[20px] pt-[115px] bg-gray-primary md:pb-[90px] md:pr-[0px] lg:flex lg:flex-row lg:pl-[80px]"
     >
       <div className="flex flex-col gap-[30px] lg:w-[55%]">
         <div className="flex flex-row items-center gap-3 md:mt-[40px]">
@@ -70,7 +70,8 @@ const HomeSection = () => {
           </button>
           <a
             className="py-[10px] border-[2px] border-white-primary rounded-[5px] text-center text-sm  hover:bg-white-primary hover:text-gray-primary lg:py-[15px] lg:px-[30px]"
-            href=""
+            target="_blank"
+            href="https://github.com/Kenzie-Academy-Brasil-Developers/portfolio-filipeotaviomm"
           >
             {dict.home.portCode}
           </a>
@@ -85,11 +86,12 @@ const HomeSection = () => {
             </a>
           </div>
         </div>
-        <ul className="h-[130px] flex flex-row mt-[35px] gap-[90px] overflow-x-auto overflow-y-hidden md:mt-[90px] xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
+        <ul className="h-[130px] flex flex-row gap-[90px] mt-[25px] mb-[25px] pl-[10px] overflow-x-auto overflow-y-hidden xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
           {stackData.map((stack, index) => (
-            <li key={index}>
+            <li className="list mt-[50px]" key={index}>
+              <p className="parag">{stack.title}</p>
               <stack.img
-                // title={stack.title}
+                title={stack.title}
                 data-title={stack.title}
                 className="icon text-gray-tertiary"
                 size={80}

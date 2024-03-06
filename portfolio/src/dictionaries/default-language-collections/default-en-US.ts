@@ -27,4 +27,23 @@ export const enUS = {
   projects: {
     title: "My Projects",
   },
+  contacts: {
+    phrase: "Let's set up a conversation and develop our creativity together!",
+    zap: {
+      title: "My Whatsapp",
+      phrase: "I'm available for a voice chat, don't hesitate to contact me.",
+      link: "Let's talk",
+    },
+    email: {
+      title: "My Email",
+      phrase: "Send me an email reporting feedbacks, suggestions and ideas",
+      link: "Send me an Email",
+    },
+    linkedIn: {
+      title: "My LinkedIn",
+      phrase:
+        "We can create more constant interactions as well as a sharing network",
+      link: "Find Me on LinkedIn",
+    },
+  },
 };

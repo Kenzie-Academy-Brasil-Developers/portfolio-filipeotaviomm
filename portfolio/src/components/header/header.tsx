@@ -30,14 +30,14 @@ const Header = () => {
   useEffect(() => {
     const position = localStorage.getItem("@Portifolio:YPosition");
     if (position) {
-      window.scrollTo(0, Number(position));
-      // window.scrollTo({ top: Number(position), behavior: "smooth" })
+      // window.scrollTo(0, Number(position));
+      window.scrollTo({ top: Number(position), behavior: "instant" });
       localStorage.removeItem("@Portifolio:YPosition");
     }
   }, []);
 
   return (
-    <header className="w-full p-[20px] fixed bg-gray-primary border-b-[3px] border-purple-primary flex flex-col md:px-[20px] lg:px-[80px] z-20">
+    <header className="w-full p-[20px] fixed bg-gray-secondary border-b-[3px] border-purple-primary flex flex-col md:px-[20px] lg:px-[80px] z-20">
       <div className="w-fullh-full flex flex-row justify-between items-center py-[8]">
         <h1 className="text-md">Filipe Otavio</h1>
         <div className="h-full flex flex-row-reverse items-center md:flex-row">
