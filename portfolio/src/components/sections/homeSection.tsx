@@ -2,7 +2,6 @@ import { Locale } from "@/config/it8n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 import { useMainContext } from "@/providers/mainContext";
 import { stackData } from "@/utils/data";
-import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 
@@ -19,14 +18,7 @@ const HomeSection = () => {
     >
       <div className="flex flex-col gap-[30px] lg:w-[55%]">
         <div className="flex flex-row items-center gap-3 md:mt-[40px]">
-          <Image
-            className=""
-            width={30}
-            height={30}
-            src="/brazil-flag.svg"
-            alt="profile photo"
-          />
-          <h2 className="text-sm">{dict.home.presentation}</h2>
+          <h2 className="text-sm font-semibold">{dict.home.presentation}</h2>
         </div>
         {language !== "pt-BR" ? (
           <div>
@@ -65,9 +57,12 @@ const HomeSection = () => {
         </div>
         <p className="text-gray-tertiary text-sm">{dict.home.present}</p>
         <div className="w-full flex flex-col gap-[20px] lg:flex-row lg:items-center lg:gap-[33px]">
-          <button className="bg-purple-primary py-[10px] rounded-[5px] text-sm hover:bg-purple-secondary lg:py-[15px] lg:px-[30px]">
+          <a
+            href="#projects"
+            className="bg-purple-primary py-[10px] rounded-[5px] text-sm text-center hover:bg-purple-secondary lg:py-[15px] lg:px-[30px]"
+          >
             {dict.home.projects}
-          </button>
+          </a>
           <a
             className="py-[10px] border-[2px] border-white-primary rounded-[5px] text-center text-sm  hover:bg-white-primary hover:text-gray-primary lg:py-[15px] lg:px-[30px]"
             target="_blank"
@@ -91,8 +86,8 @@ const HomeSection = () => {
             <li className="list mt-[50px]" key={index}>
               <p className="parag">{stack.title}</p>
               <stack.img
-                title={stack.title}
-                data-title={stack.title}
+                // title={stack.title}
+                // data-title={stack.title}
                 className="icon text-gray-tertiary"
                 size={80}
               />

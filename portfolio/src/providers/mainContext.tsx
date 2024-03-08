@@ -31,28 +31,27 @@ export const MainProvider = ({ children }: IChildren) => {
 
       const currentPosition = window.scrollY;
 
-      // console.log(projectsOffset);
-      // console.log(currentPosition);
-      // console.log(contactsOffset);
-
-      if (currentPosition >= homeOffset && currentPosition < aboutOffset) {
+      if (
+        currentPosition >= homeOffset &&
+        currentPosition < aboutOffset - 100
+      ) {
         setCurrentMenu("home");
       } else if (
-        currentPosition >= aboutOffset &&
-        currentPosition < projectsOffset - 1
+        currentPosition >= aboutOffset - 100 &&
+        currentPosition < projectsOffset - 100
       ) {
         setCurrentMenu("aboutMe");
       } else if (
-        currentPosition + 1 >= projectsOffset &&
-        currentPosition < contactsOffset - 1
+        currentPosition >= projectsOffset - 100 &&
+        currentPosition < contactsOffset - 100
       ) {
         setCurrentMenu("projects");
       } else if (
-        currentPosition + 1 >= contactsOffset &&
-        currentPosition < socialMediasOffset
+        currentPosition >= contactsOffset - 100 &&
+        currentPosition < socialMediasOffset - 200
       ) {
         setCurrentMenu("contacts");
-      } else if (currentPosition >= socialMediasOffset) {
+      } else {
         setCurrentMenu("socialMedias");
       }
     };

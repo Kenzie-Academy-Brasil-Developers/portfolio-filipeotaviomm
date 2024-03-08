@@ -39,7 +39,9 @@ const Header = () => {
   return (
     <header className="w-full p-[20px] fixed bg-gray-secondary border-b-[3px] border-purple-primary flex flex-col md:px-[20px] lg:px-[80px] z-20">
       <div className="w-fullh-full flex flex-row justify-between items-center py-[8]">
-        <h1 className="text-md">Filipe Otavio</h1>
+        <a href="#home" className="text-md">
+          Filipe Otavio
+        </a>
         <div className="h-full flex flex-row-reverse items-center md:flex-row">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}

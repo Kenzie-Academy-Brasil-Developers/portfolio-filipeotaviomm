@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import AboutMeSection from "@/components/sections/aboutMeSection";
 import ContactstSection from "@/components/sections/contactsSection";
@@ -10,7 +11,7 @@ import { useMainContext } from "@/providers/mainContext";
 import { useEffect } from "react";
 
 export default function Home({ params }: { params: { lang: Locale } }) {
-  const { setLanguage, isMenuOpen, setIsMenuOpen } = useMainContext();
+  const { setLanguage, setIsMenuOpen } = useMainContext();
 
   useEffect(() => setLanguage(params.lang), []);
 
@@ -33,6 +34,7 @@ export default function Home({ params }: { params: { lang: Locale } }) {
       <ProjectsSection />
       <ContactstSection />
       <SocialMediasSection />
+      <Footer />
     </main>
   );
 }

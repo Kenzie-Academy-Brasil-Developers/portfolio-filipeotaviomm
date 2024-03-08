@@ -48,4 +48,11 @@ export const ptBR = {
       link: "Me encontre no LinkedIn",
     },
   },
+  social: {
+    greeting: "Muito obrigado!",
+    phrase: "Me siga nas minhas redes sociais e vamos conversar...",
+  },
+  footer: {
+    text: "Todos os direitos reservados",
+  },
 };

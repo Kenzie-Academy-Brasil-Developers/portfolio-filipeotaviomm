@@ -56,7 +56,7 @@ const ContactstSection = () => {
             </div>
           </div>
           <div className="flex flex-rol gap-[20px]">
-            <div className="min-w-[70px] h-[70px] flex justify-center items-center bg-gradient-to-b from-purple-600 to-pink-400 rounded-[5px]">
+            <div className="min-w-[70px] h-[70px] flex justify-center items-center bg-gradient-to-b from-red-500 to-red-400 rounded-[5px]">
               <FaEnvelopeOpen size={25} />
             </div>
             <div className="flex flex-col gap-[10px]">

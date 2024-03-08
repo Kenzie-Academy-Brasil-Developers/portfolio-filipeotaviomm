@@ -46,4 +46,11 @@ export const enUS = {
       link: "Find Me on LinkedIn",
     },
   },
+  social: {
+    greeting: "Thank you!",
+    phrase: "Follow me on my social networks and let's talk...",
+  },
+  footer: {
+    text: "All rights reserved",
+  },
 };
