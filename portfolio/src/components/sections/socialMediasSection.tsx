@@ -25,21 +25,21 @@ const SocialMediasSection = () => {
           <a
             target="_blank"
             href="https://www.linkedin.com/in/filipeotaviomm/"
-            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full"
+            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full hover:border-[2px] hover:border-white"
           >
             <FaLinkedinIn size={30} />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/filipeotaviomm/"
-            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-br from-pink-500 to-purple-600 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full"
+            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-br from-pink-500 to-purple-600 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full hover:border-[2px] hover:border-white"
           >
             <FaInstagram size={32} />
           </a>
           <a
             target="_blank"
             href="https://www.facebook.com/filipeotaviomm"
-            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-br from-blue-600 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full"
+            className="w-[70px] h-[40px] flex justify-center items-center bg-gradient-to-br from-blue-600 rounded-[5px] md:w-[50px] md:h-[50px] md:rounded-full hover:border-[2px] hover:border-white"
           >
             <FaFacebookF size={30} />
           </a>

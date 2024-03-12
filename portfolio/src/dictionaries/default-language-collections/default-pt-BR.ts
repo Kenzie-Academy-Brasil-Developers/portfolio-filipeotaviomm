@@ -15,7 +15,7 @@ export const ptBR = {
     present:
       "Descubra nesse ambiente, criado especialmente para você, todos os meus projetos e tecnologias",
     projects: "Ver Projetos",
-    portCode: "Veja o código-fonte do meu portfólio",
+    cv: "Acessar meu Currículo",
   },
   about: {
     title: "Sobre mim",

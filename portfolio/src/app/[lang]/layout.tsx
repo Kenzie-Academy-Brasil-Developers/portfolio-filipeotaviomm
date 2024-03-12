@@ -14,6 +14,9 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "A portfolio owned by Filipe Otavio",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

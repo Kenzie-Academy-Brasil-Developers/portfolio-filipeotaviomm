@@ -39,7 +39,10 @@ const Header = () => {
   return (
     <header className="w-full p-[20px] fixed bg-gray-secondary border-b-[3px] border-purple-primary flex flex-col md:px-[20px] lg:px-[80px] z-20">
       <div className="w-fullh-full flex flex-row justify-between items-center py-[8]">
-        <a href="#home" className="text-md">
+        <a
+          href="#home"
+          className="text-md transition duration-300 hover:bg-purple-primary hover:bg-opacity-20 hover:rounded-[5px]"
+        >
           Filipe Otavio
         </a>
         <div className="h-full flex flex-row-reverse items-center md:flex-row">
@@ -53,11 +56,11 @@ const Header = () => {
             <ul className="hidden md:flex flex-row w-full gap-[50px] text-sm">
               <li>
                 <a
-                  className={
+                  className={`${
                     currentMenu === "home"
                       ? "border-b-[3px] border-purple-primary"
                       : ""
-                  }
+                  } transition duration-300 hover:bg-purple-primary hover:bg-opacity-25 hover:rounded-[5px]`}
                   href="#home"
                   onClick={() => fromMenuToElement("home")}
                 >
@@ -66,11 +69,12 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={
+                  className={`${
                     currentMenu === "aboutMe"
                       ? "border-b-[3px] border-purple-primary"
                       : ""
-                  }
+                  } transition duration-300 hover:bg-purple-primary hover:bg-opacity-25 hover:rounded-[5px]
+                  `}
                   href="#aboutMe"
                   onClick={() => fromMenuToElement("aboutMe")}
                 >
@@ -79,11 +83,11 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={
+                  className={`${
                     currentMenu === "projects"
                       ? "border-b-[3px] border-purple-primary"
                       : ""
-                  }
+                  } transition duration-300 hover:bg-purple-primary hover:bg-opacity-25 hover:rounded-[5px]`}
                   href="#projects"
                   onClick={() => fromMenuToElement("projects")}
                 >
@@ -92,11 +96,11 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={
+                  className={`${
                     currentMenu === "contacts"
                       ? "border-b-[3px] border-purple-primary"
                       : ""
-                  }
+                  } transition duration-300 hover:bg-purple-primary hover:bg-opacity-25 hover:rounded-[5px]`}
                   href="#contacts"
                   onClick={() => fromMenuToElement("contacts")}
                 >
@@ -105,11 +109,11 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className={
+                  className={`${
                     currentMenu === "socialMedias"
                       ? "border-b-[3px] border-purple-primary"
                       : ""
-                  }
+                  } transition duration-300 hover:bg-purple-primary hover:bg-opacity-25 hover:rounded-[5px]`}
                   href="#socialMedias"
                   onClick={() => fromMenuToElement("socialMedias")}
                 >

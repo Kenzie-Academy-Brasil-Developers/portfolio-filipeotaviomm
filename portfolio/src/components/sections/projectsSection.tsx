@@ -34,7 +34,7 @@ const ProjectsSection = () => {
               {projectsList.map((tech, index) => (
                 <li key={index}>
                   <img
-                    className="w-full max-h-[190px] rounded-tl-[4px] rounded-tr-[4px] xs:max-h-[280px]"
+                    className="w-full max-h-[190px] rounded-tl-[4px] rounded-tr-[4px] box_shadow xs:max-h-[280px]"
                     src={tech.photo}
                     alt="Project photo"
                   />
@@ -68,13 +68,15 @@ const ProjectsSection = () => {
                       >
                         <FaGithub size={20} /> Code
                       </a>
-                      <a
-                        className="flex flex-row text-xs bg-gray-400 px-[5px] py-[3px] rounded-[5px] text-gray-secondary items-center gap-[5px] hover:brightness-90 lg:text-sm"
-                        href={tech.vercel}
-                        target="_blank"
-                      >
-                        <FaShare size={18} /> Demo
-                      </a>
+                      {tech.vercel !== "" ? (
+                        <a
+                          className="flex flex-row text-xs bg-gray-400 px-[5px] py-[3px] rounded-[5px] text-gray-secondary items-center gap-[5px] hover:brightness-90 lg:text-sm"
+                          href={tech.vercel}
+                          target="_blank"
+                        >
+                          <FaShare size={18} /> Demo
+                        </a>
+                      ) : null}
                     </div>
                   </div>
                 </li>

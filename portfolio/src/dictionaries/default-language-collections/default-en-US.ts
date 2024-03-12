@@ -15,7 +15,7 @@ export const enUS = {
     present:
       "Discover here in this environment, created especially for you, all my projects and technologies.",
     projects: "See Projects",
-    portCode: "See my portfolio source code",
+    cv: "Access my CV",
   },
   about: {
     title: "About me",

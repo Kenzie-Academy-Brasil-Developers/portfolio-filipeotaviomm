@@ -66,9 +66,13 @@ const HomeSection = () => {
           <a
             className="py-[10px] border-[2px] border-white-primary rounded-[5px] text-center text-sm  hover:bg-white-primary hover:text-gray-primary lg:py-[15px] lg:px-[30px]"
             target="_blank"
-            href="https://github.com/Kenzie-Academy-Brasil-Developers/portfolio-filipeotaviomm"
+            href={
+              language !== "pt-BR"
+                ? "https://drive.google.com/file/d/1lJe66Rt44EIx5xroctL94o-BKozbLJzE/view?usp=sharing"
+                : "https://drive.google.com/file/d/1HG8rMkXNJqTBAWZaGCExEsKPOp1z9a1r/view?usp=sharing"
+            }
           >
-            {dict.home.portCode}
+            {dict.home.cv}
           </a>
           <div className="flex justify-center">
             <a
