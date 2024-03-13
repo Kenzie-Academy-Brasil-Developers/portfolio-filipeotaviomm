@@ -35,11 +35,11 @@ export const stackData = [
     img: SiStyledcomponents,
   },
   {
-    title: "JS",
+    title: "JavaScript",
     img: FaJs,
   },
   {
-    title: "TS",
+    title: "TypeScript",
     img: SiTypescript,
   },
   {

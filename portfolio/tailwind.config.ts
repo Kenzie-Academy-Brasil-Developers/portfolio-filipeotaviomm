@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   inter: ["var(--font-inter"],
-      // },
       screens: {
         xs: "480px",
         sm: "640px",

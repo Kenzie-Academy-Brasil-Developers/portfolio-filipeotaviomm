@@ -85,7 +85,7 @@ const HomeSection = () => {
             </a>
           </div>
         </div>
-        <ul className="h-[130px] flex flex-row gap-[90px] mt-[25px] mb-[25px] pl-[10px] overflow-x-auto overflow-y-hidden xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
+        <ul className="h-[130px] flex flex-row gap-[90px] mt-[25px] mb-[25px] pl-[15px] overflow-x-auto overflow-y-hidden xs:flex-wrap xs:overflow-x-hidden xs:h-auto">
           {stackData.map((stack, index) => (
             <li className="list mt-[50px]" key={index}>
               <p className="parag">{stack.title}</p>
