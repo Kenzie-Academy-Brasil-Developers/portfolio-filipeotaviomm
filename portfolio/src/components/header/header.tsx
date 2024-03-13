@@ -1,4 +1,3 @@
-"use client";
 import { Locale } from "@/config/it8n.config";
 import { getDictionaryUseClient } from "@/dictionaries/default-dictionary-use-client";
 import { useMainContext } from "@/providers/mainContext";
