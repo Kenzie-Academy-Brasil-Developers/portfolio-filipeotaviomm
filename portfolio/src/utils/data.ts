@@ -47,7 +47,7 @@ export const stackData = [
     img: FaReact,
   },
   {
-    title: "Next.js",
+    title: "Nest.js",
     img: SiNestjs,
   },
   {
