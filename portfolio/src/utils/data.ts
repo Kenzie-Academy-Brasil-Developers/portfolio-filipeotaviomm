@@ -90,7 +90,7 @@ export const projectsData = [
     name: "Contact Liszt",
     photo: "/contact-liszt.jpg",
     stack: "Full Stack",
-    techs: ["TypeScript, Nest.js, Prisma, Tailwind"],
+    techs: ["TypeScript, Nest.js, Prisma, Styled-Components"],
     gitHub: "https://github.com/filipeotaviomm/Contact-List",
     vercel: "https://contact-liszt.vercel.app/",
   },
@@ -114,6 +114,15 @@ export const projectsData = [
   },
   {
     id: 4,
+    name: "Events",
+    photo: "/events.jpg",
+    stack: "Full Stack",
+    techs: ["PHP, Laravel, Bootstrap, CSS"],
+    gitHub: "https://github.com/filipeotaviomm/Events",
+    vercel: "",
+  },
+  {
+    id: 5,
     name: "Kenzie Burguer",
     photo: "/kenzie-burguer.jpg",
     stack: "Front End",
@@ -122,7 +131,7 @@ export const projectsData = [
     vercel: "https://hamburgueria-kenzie-filipeotaviomm.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Nu Kenzie",
     photo: "/nu-kenzie.jpg",
     stack: "Front End",
@@ -131,7 +140,7 @@ export const projectsData = [
     vercel: "https://template-nu-kenzie-filipeotaviomm.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Real Estate",
     photo: "/real-estate.jpg",
     stack: "Back End",
@@ -140,7 +149,7 @@ export const projectsData = [
     vercel: "",
   },
   {
-    id: 7,
+    id: 8,
     name: "Kanvas",
     photo: "/kanvas.jpg",
     stack: "Back End",
@@ -149,7 +158,7 @@ export const projectsData = [
     vercel: "",
   },
   {
-    id: 8,
+    id: 9,
     name: "Petinfo",
     photo: "/petinfo.jpg",
     stack: "Front End",
@@ -158,7 +167,7 @@ export const projectsData = [
     vercel: "https://filipeotaviomm.github.io/Pet-Info/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Open Music",
     photo: "/open-music.jpg",
     stack: "Front End",
