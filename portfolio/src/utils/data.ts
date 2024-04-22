@@ -5,9 +5,11 @@ import {
   SiNestjs,
   SiStyledcomponents,
   SiExpress,
+  SiSpring,
+  SiPhp,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaGit, FaPython, FaSass } from "react-icons/fa";
+import { FaGit, FaPython, FaSass, FaJava, FaLaravel } from "react-icons/fa";
 import {
   FaDocker,
   FaHtml5,
@@ -67,12 +69,28 @@ export const stackData = [
     img: TbBrandNextjs,
   },
   {
+    title: "Java",
+    img: FaJava,
+  },
+  {
+    title: "Spring",
+    img: SiSpring,
+  },
+  {
     title: "Python",
     img: FaPython,
   },
   {
     title: "Django",
     img: SiDjango,
+  },
+  {
+    title: "PHP",
+    img: SiPhp,
+  },
+  {
+    title: "Laravel",
+    img: FaLaravel,
   },
   {
     title: "Docker",
